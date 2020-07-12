@@ -5,7 +5,7 @@ dataset_original = read.delim('Restaurant_Reviews.tsv', quote = '', stringsAsFac
 
 # Cleaning the texts
 # install.packages('tm')
-# install.packages('SnowballC')
+
 library(tm)
 library(SnowballC)
 corpus = VCorpus(VectorSource(dataset_original$Review))
